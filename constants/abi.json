@@ -1,1 +1,260 @@
-[{"type":"error","name":"Polla_NotAmountToEnter","inputs":[]},{"type":"event","anonymous":false,"name":"OwnershipTransferred","inputs":[{"type":"address","name":"previousOwner","indexed":true},{"type":"address","name":"newOwner","indexed":true}]},{"type":"event","anonymous":false,"name":"PlayerElections","inputs":[{"type":"uint8[3]","name":"elections","indexed":false}]},{"type":"event","anonymous":false,"name":"PollaEnter","inputs":[{"type":"address","name":"player","indexed":true}]},{"type":"function","name":"EleccionesJugador","constant":false,"payable":false,"gas":29000000,"inputs":[{"type":"uint8[3]","name":"_elecciones"}],"outputs":[]},{"type":"function","name":"EmpiezaMundial","constant":false,"payable":false,"gas":29000000,"inputs":[],"outputs":[]},{"type":"function","name":"QuienGanoPartidos","constant":false,"payable":false,"gas":29000000,"inputs":[{"type":"uint8[3]","name":"_partidos_ganados_por"}],"outputs":[]},{"type":"function","name":"TerminaMundial","constant":false,"payable":false,"gas":29000000,"inputs":[],"outputs":[]},{"type":"function","name":"addressToPuntaje","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[{"type":"address"}],"outputs":[{"type":"uint256","name":"puntaje"}]},{"type":"function","name":"endPollaAndCalculateWinner","constant":false,"payable":false,"gas":29000000,"inputs":[],"outputs":[]},{"type":"function","name":"enterPolla","constant":false,"stateMutability":"payable","payable":true,"gas":29000000,"inputs":[],"outputs":[]},{"type":"function","name":"getEntranceFee","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[],"outputs":[{"type":"uint256"}]},{"type":"function","name":"getPOLLA_STATE","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[],"outputs":[{"type":"uint8"}]},{"type":"function","name":"getPlayer","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[{"type":"uint256","name":"index"}],"outputs":[{"type":"address"}]},{"type":"function","name":"owner","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[],"outputs":[{"type":"address"}]},{"type":"function","name":"polla_state","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[],"outputs":[{"type":"uint8"}]},{"type":"function","name":"recentWinner","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[],"outputs":[{"type":"address"}]},{"type":"function","name":"renounceOwnership","constant":false,"payable":false,"gas":29000000,"inputs":[],"outputs":[]},{"type":"function","name":"startPolla","constant":false,"payable":false,"gas":29000000,"inputs":[],"outputs":[]},{"type":"function","name":"transferOwnership","constant":false,"payable":false,"gas":29000000,"inputs":[{"type":"address","name":"newOwner"}],"outputs":[]},{"type":"function","name":"vereleccionpartidox","constant":true,"stateMutability":"view","payable":false,"gas":29000000,"inputs":[{"type":"address","name":"_address"},{"type":"uint8","name":"partido"}],"outputs":[{"type":"uint8","name":"Eleccion"}]}]
+[
+    {
+        "inputs": [],
+        "name": "Polla_NotAmountToEnter",
+        "type": "error"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": false,
+                "internalType": "uint8[3]",
+                "name": "elections",
+                "type": "uint8[3]"
+            }
+        ],
+        "name": "PlayerElections",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "player",
+                "type": "address"
+            }
+        ],
+        "name": "PollaEnter",
+        "type": "event"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint8[3]",
+                "name": "_elecciones",
+                "type": "uint8[3]"
+            }
+        ],
+        "name": "EleccionesJugador",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "EmpiezaMundial",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint8[3]",
+                "name": "_partidos_ganados_por",
+                "type": "uint8[3]"
+            }
+        ],
+        "name": "QuienGanoPartidos",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "TerminaMundial",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "addressToPuntaje",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "puntaje",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "endPollaAndCalculateWinner",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "enterPolla",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getEntranceFee",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getPOLLA_STATE",
+        "outputs": [
+            {
+                "internalType": "enum Polla.POLLA_STATE",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "index",
+                "type": "uint256"
+            }
+        ],
+        "name": "getPlayer",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "polla_state",
+        "outputs": [
+            {
+                "internalType": "enum Polla.POLLA_STATE",
+                "name": "",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "recentWinner",
+        "outputs": [
+            {
+                "internalType": "address payable",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "startPolla",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_address",
+                "type": "address"
+            },
+            {
+                "internalType": "uint8",
+                "name": "partido",
+                "type": "uint8"
+            }
+        ],
+        "name": "vereleccionpartidox",
+        "outputs": [
+            {
+                "internalType": "uint8",
+                "name": "Eleccion",
+                "type": "uint8"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
