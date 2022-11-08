@@ -15,6 +15,7 @@ export default function Home() {
     const pollaAddress = chainId in contractAddresses ? contractAddresses[chainId][0] : null
     const { runContractFunction } = useWeb3Contract()
     const dispatch = useNotification()
+
     async function approveAndList(data) {
         console.log("Approving ... ")
         const E0 = data.data[0].inputResult
@@ -60,6 +61,7 @@ export default function Home() {
             </Head>
             <h2 className="py-4 px-4 font-bold text-2xl">Player Elections Page </h2>
             <div>Warning: Don't lose innecesary gas fees by not entering the polla first! </div>
+            <div>Warning: You Cant't change your picks once you submit them ! </div>
             <div>
                 You Must Pay enter fee in
                 <Link href="/">
@@ -68,10 +70,8 @@ export default function Home() {
                 first!!
             </div>
 
-            <div>Modo de elegir por partido: </div>
-            <div>
-                Local vs. Visita --- Eleccion --- 0 = Gana Local ; 1= Gana Visita ; 2= Empate
-            </div>
+            <div>How To Choose and Inpu Your Choise: </div>
+            <div>Home vs. Away --- Election --- 0 = Home Wins ; 1= Away Wins ; 2= Tie</div>
             <Form
                 onSubmit={approveAndList}
                 data={[

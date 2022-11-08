@@ -15,6 +15,11 @@ export default function Header() {
                 <Link href="/make-elections">
                     <a className="mr-4 p-6">Make Your Games Elections</a>
                 </Link>
+
+                <Link href="/check-elections">
+                    <a className="mr-4 p-6">Check A Account Game Pick</a>
+                </Link>
+
                 <ConnectButton moralisAuth={false} />
             </div>
         </nav>

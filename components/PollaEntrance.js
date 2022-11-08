@@ -99,7 +99,7 @@ export default function PollaEntrance() {
 
                     <div>Entrance Fee: {ethers.utils.formatUnits(entranceFee, "ether")} ETH </div>
                     <div>
-                        After Entry Go Make Your Picks in
+                        After Entering Go Make Your Picks in
                         <Link href="/make-elections">
                             <a className="mr-4 p-6">Your Picks</a>
                         </Link>
