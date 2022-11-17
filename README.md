@@ -1,3 +1,10 @@
+This front end is made for the Polla Mundial 2022 made also by me in this repository https://github.com/vicentemunozlh/prototipo-1 . 
+
+
+This front end is made with Next.js, its stantandard ReadME is the following: 
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
